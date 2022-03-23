@@ -1372,7 +1372,11 @@ input.search_button {
 /* Mobile Tweaks */
 
 @media only screen and (max-width: 868px) {
-	
+
+	.nav_tabs li.active a {
+		font-size:  90%;
+	}	
+
     #left_menu {
        	margin-top: 10px;
         float: none !important;
@@ -1421,6 +1425,10 @@ input.search_button {
         left: 0px;
         right: 0px;
         top: 0px;
+
+        position: absolute;
+        border-radius: 0px;
+        border: unset;         
     }
     
     table.general {
@@ -1448,8 +1456,8 @@ input.search_button {
     
     #menu ul {
         margin: 0;
-        padding: 5px 5px 0;
-        height:;
+        /* padding: 5px 5px 0; */     
+        padding: unset; 
     }
     
     .nav_tabs li.active a {
